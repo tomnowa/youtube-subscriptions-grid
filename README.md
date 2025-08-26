@@ -25,11 +25,6 @@ that’s it. test by clicking “Subscriptions” in the sidebar.
 
 ---
 
-## screenshots
-*(add a before/after shot of subscriptions view here)*
-
----
-
 ## faq
 **does it collect data?**  
 no. there’s no background script, no analytics, no remote calls. it just patches urls.
@@ -44,4 +39,3 @@ should work with minimal tweaks. firefox supports manifest v3 now, so porting is
 
 ## license
 MIT – do what you want, just don’t sell it back to me.
-
