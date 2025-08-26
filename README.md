@@ -1,7 +1,7 @@
 # YouTube Subscriptions – Grid View by Default
 
 sick of youtube forcing the “by channel” subscriptions view?  
-this tiny chrome extension fixes it. every time you click **Subscriptions**, you’ll get the clean grid view again (`flow=1`). no reload flicker, no loops.
+this tiny chrome extension fixes it. every time you click **Subscriptions**, you’ll get the clean grid view again (`flow=1`).
 
 ---
 
@@ -44,3 +44,4 @@ should work with minimal tweaks. firefox supports manifest v3 now, so porting is
 
 ## license
 MIT – do what you want, just don’t sell it back to me.
+
