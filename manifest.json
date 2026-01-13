@@ -1,8 +1,10 @@
 {
   "manifest_version": 3,
   "name": "YouTube Subscriptions - Grid by Default",
-  "version": "1.1.0",
-  "description": "Force YouTube Subscriptions to use flow=1 grid view. Includes a network redirect and SPA-safe URL patching to avoid loops.",
+  "version": "1.2.0",
+  "description": "Force YouTube Subscriptions to use flow=1 grid view. Includes network-level redirect and SPA-safe URL patching.",
+  "author": "tomnowa",
+  "homepage_url": "https://github.com/tomnowa/youtube-subscriptions-grid",
   "permissions": [
     "declarativeNetRequest"
   ],
@@ -25,9 +27,7 @@
         "https://www.youtube.com/*",
         "https://m.youtube.com/*"
       ],
-      "js": [
-        "content.js"
-      ],
+      "js": ["content.js"],
       "run_at": "document_start"
     }
   ]
