@@ -5,14 +5,29 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "regexSubstitution": "https://www.youtube.com/feed/subscriptions?flow=1"
+        "transform": {
+          "queryTransform": {
+            "addOrReplaceParams": [
+              { "key": "flow", "value": "1" }
+            ]
+          }
+        }
       }
     },
     "condition": {
-      "regexFilter": "^https://(?:www|m)\\.youtube\\.com/feed/subscriptions(?:\\?.*)?$",
-      "resourceTypes": [
-        "main_frame"
-      ]
+      "regexFilter": "^https://(www|m)\\.youtube\\.com/feed/subscriptions(\\?|$)",
+      "excludedResourceTypes": ["sub_frame", "stylesheet", "script", "image", "font", "xmlhttprequest", "ping", "media", "websocket", "other"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https://(www|m)\\.youtube\\.com/feed/subscriptions\\?.*flow=1",
+      "resourceTypes": ["main_frame"]
     }
   }
 ]
